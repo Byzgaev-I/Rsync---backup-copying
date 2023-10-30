@@ -51,11 +51,12 @@ crontab -e
 0 * 1-31 * * /home/homework.sh
 
 ```
+
 ![image.jpg](https://github.com/Byzgaev-I/Rsync-backup-copying/blob/main/3.png)
 
-```
-Скрипт проверяет вывод rsync, и выводи информацию в системный log
+Скриптом проверяем вывод rsync и выводим информацию в системный log
 
+```
 #!/bin/bash
 
 source=$HOME 
