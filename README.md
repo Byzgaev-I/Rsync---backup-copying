@@ -76,9 +76,9 @@ fi
 
 ```
 
+![image.jpg](https://github.com/Byzgaev-I/Rsync-backup-copying/blob/main/4.png)
 
-
-
+![image.jpg](https://github.com/Byzgaev-I/Rsync-backup-copying/blob/main/5.png)
 
 
 
