@@ -53,6 +53,28 @@ crontab -e
 ```
 ![image.jpg](https://github.com/Byzgaev-I/Rsync-backup-copying/blob/main/3.png)
 
+```
+Скрипт проверяет вывод rsync, и выводи информацию в системный log
+
+#!/bin/bash
+
+source=$HOME 
+dest='/tmp/backup/'
+
+rsync_sending=$(rsync -avc --delete --exclude '.*' $source $dest  2>&1 | sed  '/^#\|^$\| *#/d' | awk 'NR==1 {print $1}')
+
+if [ -d "$dest" ]; then
+        if [ $rsync_sending == "sending" ] ; then
+                logger "backup created Successfully";
+        else
+                logger "backup no create";
+        fi
+else
+        logger "backup dir not found";
+fi
+
+```
+
 
 
 
