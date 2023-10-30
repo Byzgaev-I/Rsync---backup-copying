@@ -13,3 +13,8 @@
 ```
  rsync -avc --delete --prorgess --exclude '.*' /home/byzgaev/ /tmp/backup/
 
+```
+
+![image.jpg](https://github.com/Byzgaev-I/Rsync-backup-copying/blob/main/1.png)
+
+![image.jpg](https://github.com/Byzgaev-I/Rsync-backup-copying/blob/main/2.png)
