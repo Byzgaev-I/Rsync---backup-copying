@@ -8,7 +8,7 @@
 
 ### Выполнения задания 1
 
-Выполним резервное копировани каталога пользователя в /tmp/backup/ :
+Выполним резервное копирование каталога пользователя в /tmp/backup/:
 
 ```
  rsync -avc --delete --prorgess --exclude '.*' /home/byzgaev/ /tmp/backup/
@@ -34,7 +34,7 @@
 ### Выполнения задания 2
 
 
-Резервное копирование домашней директории 
+Резервное копирование домашней директории:
 
 ```
 rsync -avc --delete --exclude '.*' /home/byzgaev/ /tmp/backup/
@@ -43,7 +43,7 @@ rsync -avc --delete --exclude '.*' /home/byzgaev/ /tmp/backup/
 
 создаем скрипт /home/homework.sh и выполняем по расписанию каждый день
 
-Далее настраиваем crontab
+Далее настраиваем crontab:
 
 ```
 crontab -e
@@ -54,7 +54,7 @@ crontab -e
 
 ![image.jpg](https://github.com/Byzgaev-I/Rsync-backup-copying/blob/main/3.png)
 
-Скриптом проверяем вывод rsync и выводим информацию в системный log
+Скриптом проверяем вывод rsync и выводим информацию в системный log:
 
 ```
 #!/bin/bash
