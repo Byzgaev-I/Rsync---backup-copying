@@ -51,7 +51,7 @@ crontab -e
 0 * 1-31 * * /home/homework.sh
 
 ```
-![image.jpg)(https://github.com/Byzgaev-I/Rsync-backup-copying/blob/main/3.png)
+![image.jpg](https://github.com/Byzgaev-I/Rsync-backup-copying/blob/main/3.png)
 
 
 
