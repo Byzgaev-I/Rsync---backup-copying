@@ -41,4 +41,32 @@ rsync -avc --delete --exclude '.*' /home/byzgaev/ /tmp/backup/
 
 ```
 
-создаем скрипт /home/sync.sh и выполняем по расписанию каждый день 
+создаем скрипт /home/homework.sh и выполняем по расписанию каждый день
+
+Далее настраиваем crontab
+
+```
+crontab -e
+
+0 * 1-31 * * /home/homework.sh
+
+```
+![image.jpg)(https://github.com/Byzgaev-I/Rsync-backup-copying/blob/main/3.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
